@@ -1,0 +1,9 @@
+<h1>All Music</h1>
+
+    <ul>
+        {% for music in object_list %}
+             <li><a href="{{music.get_absolute_url}}">{{ music.title }}</a> </li>
+
+        {% endfor %}
+     </ul>
+

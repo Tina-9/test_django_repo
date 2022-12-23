@@ -1,0 +1,8 @@
+<div class="container narrow">
+    <h1>Sign In</h1>
+    {% url 'login' as url %}
+    {% include "jurnal/form.html" with form_id="sign_in" form_action=url button_text="Sign In" %}
+    <div class="text-center">
+        <p><a href='{% url "register" %}'>Create an account</a></p>
+    </div>
+</div>
